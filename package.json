@@ -1,0 +1,26 @@
+{
+  "name": "basic-web-structure",
+  "version": "1.0.0",
+  "description": "template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcahuana/basic-web-structure.git"
+  },
+  "keywords": [
+    "template",
+    "sass",
+    "template",
+    "jade",
+    "template"
+  ],
+  "author": "Juan Cahuana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcahuana/basic-web-structure/issues"
+  },
+  "homepage": "https://github.com/jcahuana/basic-web-structure#readme"
+}
