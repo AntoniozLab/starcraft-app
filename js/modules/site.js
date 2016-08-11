@@ -32,12 +32,31 @@ var Site = (function($){
 	 // Make sure it is public or set to Anyone with link can view
 	 var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
 	 var row_template;
+   var url_logo;
 
 	 $.getJSON(url, function(data) {
 	  var entry = data.feed.entry;
 
 	  $(entry).each(function(){
-			row_template = '<tr><td>'+ this.gsx$posicion.$t +'</td><td>'+ this.gsx$jugador.$t +'</td><td>'+ this.gsx$raza.$t +'</td></tr>';
+
+      switch (this.gsx$raza.$t) {
+        case 'terran':
+          url_logo = 'http://juancahuana.com/starcraft-app/img/logo-terran.png';
+          break;
+        case 'zerg':
+          url_logo = 'http://juancahuana.com/starcraft-app/img/logo-zerg.png';
+          break;
+        case 'protoss':
+          url_logo = 'http://juancahuana.com/starcraft-app/img/logo-protoss.png';
+          break;
+        default:
+          url_logo = null;
+      }
+      if (url_logo !== null) {
+        row_template = '<tr><td>'+ this.gsx$posicion.$t +'</td><td>'+ this.gsx$jugador.$t +'</td><td><img class="logo-raza" src="'+url_logo+'"/></td></tr>';
+      } else {
+        row_template = '<tr><td>'+ this.gsx$posicion.$t +'</td><td>'+ this.gsx$jugador.$t +'</td><td></td></tr>';
+      }
 			tabla_posiciones.append(row_template);
 	  });
 
