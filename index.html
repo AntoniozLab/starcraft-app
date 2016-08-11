@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Título</title>
-    <meta name="description" content="Descripción">
+    <title>Tabla de posiciones</title>
+    <meta name="description" content="Tabla de posiciones de StarCraft 1">
     <meta name="author" content="Juan Cahuana">
     <link rel="stylesheet" href="css/app.css">
   </head>
@@ -14,27 +14,41 @@
       <!--Header-->
       <header class="Header">
         <div class="Header-content">
-          <nav class="MainNav">
-            <div class="MainNav-list">
-              <div data-nom="button-a" class="MainNav-item"><span>Option a</span></div>
-              <div data-nom="button-b" class="MainNav-item is-active"><span>Option b</span></div>
+          <div class="row">
+            <div class="columns"><img src="img/logo-sc.png" alt="StarCraft" class="img-logo"></div>
+          </div>
+          <div class="row">
+            <div class="columns">
+              <h1>Tabla de posiciones</h1>
             </div>
-          </nav>
+          </div>
         </div>
       </header>
       <div class="MainContent">
-        <div class="MainContent-content"><img src="img/logo.jpg" alt="Lorem"></div>
+        <div class="MainContent-content">
+          <div class="Ranking">
+            <table class="hover">
+              <thead>
+                <tr>
+                  <th>Posición</th>
+                  <th>Jugador</th>
+                  <th>Raza</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
       </div>
       <!-- Footer-->
       <div class="Footer">
-        <div class="Footer-content"><span>Footer</span></div>
+        <div class="Footer-content"></div>
       </div>
     </div>
     <!--Archvios de terceros-->
     <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/jquery.validate.min.js"></script>
+    <script src="js/vendor/jquery.backstretch.min.js"></script>
     <!--Scripts propios-->
-    <script src="js/modules/main-nav.js"></script>
+    <script src="js/modules/site.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

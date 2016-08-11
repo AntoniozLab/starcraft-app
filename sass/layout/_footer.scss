@@ -3,7 +3,7 @@
 ----------------------------------------------------------------------------*/
 .Footer {
   &-content {
-    background-color: $c_bg_footer;
+    // background-color: $c_bg_footer;
     padding: 10px;
     @include breakpoint(phablet) {
       padding-left: 20px;

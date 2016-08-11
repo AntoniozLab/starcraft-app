@@ -1,25 +1,41 @@
 // --------------------------------------------------------------------------*
 // Se usa las siguientes familias:
 // - Open Sans
-// - Myriad Pro
+// - Jura
 // --------------------------------------------------------------------------*
 
 /*---------------------------------------------------------------------------*
  * Fuentes
 ----------------------------------------------------------------------------*/
-// Open Sans Light
 @font-face {
-	font-family:'OpenSans';
-	src: url('../fonts/OpenSans-Light/OpenSans-Light_gdi.eot');
-	src: url('../fonts/OpenSans-Light/OpenSans-Light_gdi.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/OpenSans-Light/OpenSans-Light_gdi.woff') format('woff'),
-		url('../fonts/OpenSans-Light/OpenSans-Light_gdi.ttf') format('truetype'),
-		url('../fonts/OpenSans-Light/OpenSans-Light_gdi.otf') format('opentype'),
-		url('../fonts/OpenSans-Light/OpenSans-Light_gdi.svg#OpenSans-Light') format('svg');
-	font-weight: 300;
+	font-family: 'Jura';
+	src: url('../fonts/Jura-Regular/Jura-Regular.eot');
+	src: url('../fonts/Jura-Regular/Jura-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Jura-Regular/Jura-Regular.woff') format('woff'),
+		url('../fonts/Jura-Regular/Jura-Regular.ttf') format('truetype'),
+		url('../fonts/Jura-Regular/Jura-Regular.svg#Jura-Regular') format('svg');
+	font-weight: normal;
 	font-style: normal;
-	font-stretch: normal;
-	unicode-range: U+0020-2212;
+}
+@font-face {
+	font-family: 'Jura';
+	src: url('../fonts/Jura-Medium/Jura-Medium.eot');
+	src: url('../fonts/Jura-Medium/Jura-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Jura-Medium/Jura-Medium.woff') format('woff'),
+		url('../fonts/Jura-Medium/Jura-Medium.ttf') format('truetype'),
+		url('../fonts/Jura-Medium/Jura-Medium.svg#Jura-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Jura';
+	src: url('../fonts/Jura-SemiBold/Jura-DemiBold.eot');
+	src: url('../fonts/Jura-SemiBold/Jura-DemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Jura-SemiBold/Jura-DemiBold.woff') format('woff'),
+		url('../fonts/Jura-SemiBold/Jura-DemiBold.ttf') format('truetype'),
+		url('../fonts/Jura-SemiBold/Jura-DemiBold.svg#Jura-DemiBold') format('svg');
+	font-weight: 600;
+	font-style: normal;
 }
 
 // Open Sans Regular
@@ -36,16 +52,6 @@
 	font-stretch: normal;
 	unicode-range: U+0020-25CA;
 }
-/*@font-face {
-    font-family: 'OpenSans';
-    src: url('../fonts/OpenSans-Regular-Opcional/OpenSans-Regular-webfont.eot');
-    src: url('../fonts/OpenSans-Regular-Opcional/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Regular-Opcional/OpenSans-Regular-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Regular-Opcional/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Regular-Opcional/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}*/
 
 // Open Sans SemiBold
 @font-face {

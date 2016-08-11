@@ -1,6 +1,6 @@
 include ../config/config.jade
 doctype html
-html
+html(lang='es')
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
@@ -21,12 +21,27 @@ html
       include ./footer.jade
       
     //- Archivos Javascript
-    
+  
+    //- Firebase Scripts
+    //- script(src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js")
+    //- script.
+    //-   // Initialize Firebase
+    //-   var config = {
+    //-     apiKey: "AIzaSyB-sbQWqYrWvoyEP15kHOmCQi_pVmK3500",
+    //-     authDomain: "startcraft-app.firebaseapp.com",
+    //-     databaseURL: "https://startcraft-app.firebaseio.com",
+    //-     storageBucket: "startcraft-app.appspot.com",
+    //-   };
+    //-   firebase.initializeApp(config);
+
     //Archvios de terceros
     script(src='js/vendor/jquery.min.js')
-    script(src='js/vendor/jquery.validate.min.js')
+    //- script(src='js/vendor/what-input.js')
+    //- script(src='js/vendor/foundation.min.js')
+    script(src='js/vendor/jquery.backstretch.min.js')
+    //- script(src='js/vendor/jquery.validate.min.js')
     
     //Scripts propios
-    script(src="js/modules/main-nav.js")
+    script(src="js/modules/site.js")
     script(src="js/app.js")
     block _js-files_
