@@ -36,22 +36,37 @@
       </header>
       <div class="MainContent">
         <div class="MainContent-content">
-          <div class="Ranking">
-            <table class="hover">
-              <thead>
-                <tr>
-                  <th>Posición</th>
-                  <th>Jugador</th>
-                  <th>Raza</th>
-                </tr>
-              </thead>
-            </table>
+          <div class="row">
+            <div class="columns">
+              <div class="Ranking">
+                <table class="hover">
+                  <thead>
+                    <tr>
+                      <th>Posición</th>
+                      <th>Jugador</th>
+                      <th>Raza</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+              <div class="Edit">
+                <div class="Edit-content"><a href="https://docs.google.com/spreadsheets/d/11bmjb6NXlI_zZ6CRRkbguTwLkHA_jtSN6voqMXXKT9E/edit?usp=sharing" target="_blank" class="button warning Edit-button">Editar Ranking</a></div>
+              </div>
+              <div class="Comments">
+                <div class="Comments-content"><div class="fb-comments" data-href="http://juancahuana.com/starcraft-app/" data-width="100%" data-numposts="8"></div></div>
+              </div>
+            </div>
           </div>
-          <div class="Edit">
-            <div class="Edit-content"><a href="https://docs.google.com/spreadsheets/d/11bmjb6NXlI_zZ6CRRkbguTwLkHA_jtSN6voqMXXKT9E/edit?usp=sharing" target="_blank" class="button Edit-button">Editar Ranking</a></div>
-          </div>
-          <div class="Comments">
-            <div class="Comments-content"><div class="fb-comments" data-href="http://juancahuana.com/starcraft-app/" data-width="100%" data-numposts="8"></div></div>
+          <div class="row">
+            <div class="columns">
+              <div class="Modal">
+                <div id="modal" data-reveal="" class="reveal">
+                  <h2>Resumen</h2>
+                  <p>Resumen</p>
+                  <button data-close="" aria-label="Close modal" type="button" class="close-button"><span aria-hidden="true">×</span></button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -61,7 +76,9 @@
       </div>
     </div>
     <!--Archvios de terceros-->
-    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
     <script src="js/vendor/jquery.backstretch.min.js"></script>
     <!--Scripts propios-->
     <script src="js/modules/site.js"></script>

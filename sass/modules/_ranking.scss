@@ -1,7 +1,47 @@
 .Ranking {
   table {
-    border-radius: 5px;
     overflow: hidden;
+
+    th {
+      text-transform: uppercase;
+    }
+    th:first-child {
+      width: 90px;
+    }
+    th:last-child {
+      text-align: center;
+    }
+    td {
+      font-size: 14px;
+      line-height: 1.2;
+      @include breakpoint(phablet) {
+        font-size: 15px;
+      }
+      &:first-child {
+        text-align: center;
+      }
+      .label {
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 10px;
+        font-size: 14px;
+        font-family: $ff_principal;
+        font-weight: $w_semibold;
+        @include breakpoint(phablet) {
+          font-size: 15px;
+        }
+        &.secondary {
+          cursor: inherit;
+          font-weight: $w_normal;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .logo-raza{
+      height: auto;
+      width: 40px;
+      max-width: 40px;
+    }
   }
-  
 }
