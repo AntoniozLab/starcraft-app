@@ -5596,7 +5596,7 @@ body {
 ----------------------------------------------------------------------------*/
 .OuterContainer {
   min-height: 400px;
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 10px;
 }
@@ -5632,7 +5632,7 @@ body {
 }
 
 .Header-content .img-logo {
-  max-width: 250px;
+  max-width: 300px;
   display: block;
   margin: 0 auto;
 }
@@ -5712,14 +5712,8 @@ body {
 ----------------------------------------------------------------------------*/
 .MainContent-content {
   background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.82);
-  padding: 10px;
-}
-
-@media (min-width: 640px) {
-  .MainContent-content {
-    padding-left: 20px;
-  }
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px 0;
 }
 
 .MainContent-content img {
@@ -5747,35 +5741,69 @@ body {
 /*---------------------------------------------------------------------------*
  * Fin:Footer
 ----------------------------------------------------------------------------*/
+.Comments-content {
+  background-color: #fff;
+}
+
+.Edit-content .button {
+  font-family: "OpenSans", Arial;
+  font-weight: 600;
+}
+
 .Ranking table {
-  border-radius: 5px;
   overflow: hidden;
 }
 
-.Ranking table .logo-raza {
-  height: auto;
-  width: 50px;
-  max-width: 50px;
-}
-
-.Ranking table td {
-  font-size: 14px;
-}
-
-@media (min-width: 640px) {
-  .Ranking table td {
-    font-size: 16px;
-  }
+.Ranking table th {
+  text-transform: uppercase;
 }
 
 .Ranking table th:first-child {
   width: 90px;
 }
 
+.Ranking table th:last-child {
+  text-align: center;
+}
+
+.Ranking table td {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .Ranking table td {
+    font-size: 15px;
+  }
+}
+
 .Ranking table td:first-child {
   text-align: center;
 }
 
-.Ranking table th:last-child {
-  text-align: center;
+.Ranking table td .label {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "OpenSans", Arial;
+  font-weight: 600;
+}
+
+@media (min-width: 640px) {
+  .Ranking table td .label {
+    font-size: 15px;
+  }
+}
+
+.Ranking table td .label.secondary {
+  cursor: inherit;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.Ranking table .logo-raza {
+  height: auto;
+  width: 40px;
+  max-width: 40px;
 }
