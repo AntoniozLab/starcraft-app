@@ -24,6 +24,10 @@ var Site = (function($){
     ], {duration: 3000, fade: 750});
   };
 
+  events.addComments = function() {
+    console.log("ok");
+  };
+
   events.readRanking = function() {
 		var tabla_posiciones = $('.Ranking table');
 
@@ -69,6 +73,8 @@ var Site = (function($){
     suscribeEvents();
     events.backgroundSlide();
     events.readRanking();
+    events.addComments();
+
   };
 
   /**
