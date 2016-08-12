@@ -8,20 +8,29 @@ html(lang='es')
     title #{site_title}
     meta(name="description", content="#{site_description}")
     meta(name="author", content="#{site_author}")
-    
+
     //- Archivos CSS
     block _css-files_
   body
+    div#fb-root
+    script.
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.7&appId=1736000783314172";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     .OuterContainer
       include ./header.jade
-      
+
       //- Contenido variable
       block _main-content_
-      
+
       include ./footer.jade
-      
+
     //- Archivos Javascript
-  
+
     //- Firebase Scripts
     //- script(src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js")
     //- script.
@@ -40,7 +49,7 @@ html(lang='es')
     //- script(src='js/vendor/foundation.min.js')
     script(src='js/vendor/jquery.backstretch.min.js')
     //- script(src='js/vendor/jquery.validate.min.js')
-    
+
     //Scripts propios
     script(src="js/modules/site.js")
     script(src="js/app.js")
